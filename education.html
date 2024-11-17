@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Profile</title>
+    <style>
+		
+		 body {
+             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9bb5c4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+			margin-bottom:30px;
+        }
+
+
+        .education-header {
+            width: 100%; 
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            background-color:#02152e;
+            color: #fff; 
+			margin-bottom:30px;
+			margin-top:10px;
+        }
+
+        .education-header h1 {
+        font-size: 2rem;
+        margin: 0;
+        font-family:Times new roman, sans-serif;
+	    color:white;
+}
+
+
+        .education-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+        }
+        .education-container h1 {
+            text-align: center;
+            color: #1a3659;
+            margin-bottom: 20px;
+        }
+        .education-entry {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e6f3ff;
+            border-left: 5px solid #1a3659;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .education-entry img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 25px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .education-details {
+            flex: 1;
+        }
+        .education-entry h2 {
+            margin: 0;
+            color: #063970;
+        }
+        .education-entry p {
+            margin: 5px 0;
+            color: #555;
+        }
+       
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+		
+		
+    </style>
+</head>
+<body>
+ 
+  <div class="education-header">
+  <h1>MY EDUCATION</h1>
+  </div>
+
+
+            <div class="education-container">
+            <div class="education-entry">
+            <a href=upnm.html><img alt="upnm" src="image/UPNMM.jpg"></a>
+            <div class="education-details">
+                <h2>BACHELOR OF COMPUTER SCIENCE (CYBERSECURITY)</h2>
+                <p><strong>Institution:</strong> National Defence University of Malaysia</p>
+                <p><strong>Years Attended:</strong> 2023 - Present</p>
+                <p><strong>Highlights:</strong> Pursuing an in-depth understanding of cybersecurity practices, defensive strategies, and threat analysis. 
+				Engaged in hands-on projects that enhance my technical expertise and ability to respond to real-world security challenges. 
+				Actively contributing to collaborative projects, fostering teamwork, and effective communication.</p>
+            </div>
+            </div>
+
+            <div class="education-entry">
+            <a href=upnm.html><img alt="upnm" src="image/UPNMM.jpg"></a>
+            <div class="education-details">
+                <h2>FOUNDATION IN ENGINEERING & TECHNOLOGY)</h2>
+                <p><strong>Institution:</strong> National Defence University of Malaysia</p>
+                <p><strong>Years Attended:</strong> 2022 - 2023</p>
+                <p><strong>Highlights:</strong> Built a strong foundation in engineering and technology, mastering the core concepts in mathematics, physics, chemistry and also information technology.
+				The program honed my problem-solving abilities and nurtured analytical thinking. 
+				Participated in group projects that enhanced my teamwork and presentation skills.</p>
+            </div>
+            </div>
+
+        <div class="education-entry">
+		<a href=scipp.html><img alt="scipp" src="image/SCIPP.jpg"></a>
+        <div class="education-details">
+                <h2>SPM (Malaysian Certificate of Education)</h2>
+                <p><strong>Institution:</strong> Sekolah Menengah Sains Pasir Puteh</p>
+                <p><strong>Years Attended:</strong> 2017 - 2022</p>
+                <p><strong>Highlights:</strong> Completed my secondary education with a focus on science subjects, excelling academically and graduating with top honors. 
+				Actively involved in co-curricular activities, which included leadership roles in school societies and sports, shaping my teamwork and leadership capabilities.</p>
+                </div>
+                </div>
+                </div>
+
+    <div class="overlay" id="image-overlay">
+    <img id="full-image" src="" alt="Full Image">
+    </div>
+    
+	
+</body>
+</html>

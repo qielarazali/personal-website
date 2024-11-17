@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+      	 body {
+             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9bb5c4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+			margin-bottom:30px;
+        }
+
+
+        .profile-header {
+            width: 100%; 
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            background-color:#02152e;
+            color: #fff; 
+			margin-bottom:20px;
+			margin-top:10px;
+        }
+
+        .profile-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family:Times new roman, sans-serif;
+}
+
+		
+        .profile-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+			
+        }
+        .profile-image {
+            flex: 1;
+            background: url('image/newformal.jpg') no-repeat center center/cover;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .profile-details {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile-details h1 {
+            margin: 0;
+            color: #333;
+            font-size: 2rem;
+			text-align:center;
+			margin-bottom:10px;
+        }
+		.profile-details .description {
+		 font-size: 0.8rem;  
+    color: #555;
+	text-align:center;
+	margin-bottom:20px;
+	}
+	
+		
+        .profile-details p {
+            color: #666;
+            line-height: 1.6;
+            margin: 3px 0;
+        }
+	
+	.profile-details ul,
+.profile-details ul li {
+    color: #666; 
+    line-height: 1.4; 
+}
+
+        .profile-details .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #063970;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .profile-details .btn:hover {
+            background-color: #05507c;
+        }
+		
+
+    </style>
+</head>
+<body>
+
+ <div class="profile-header">
+            <h1>MY PROFILE</h1>
+        </div>
+		
+    <div class="profile-container">
+        <div class="profile-image"></div>
+        <div class="profile-details">
+            <h1>Nur Syaqila binti Mohd Razali</h1>
+			<p class="description"><b>A highly motivated Cybersecurity student with a passion for innovation and a strong background in technical 
+             problem-solving and creative design.</b></p>
+            <p><strong>Matrix No:</strong> 2230290</p>
+            <p><strong>Course:</strong> Computer Science (Cybersecurity)</p>
+            <p><strong>Faculty:</strong> Faculty of Defence Science and Technology</p>
+            <p><strong>Address:</strong> Pasir Puteh, Kelantan</p>
+			<p><strong>Position:</strong></p>
+			
+			<table border="1" align="center" width=400px>
+    <tr>
+        <th bgcolor="#76dbdb">No</th>
+        <th bgcolor="#76dbdb">Position</th>
+        <th bgcolor="#76dbdb">Club Name</th>
+    </tr>
+    <tr>
+        <td width="10%">1</td>
+        <td width="40%">Secretary</td>
+        <td width="50%">Warisan Pantun Club</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Deputy Secretary</td>
+        <td>Sahabat Al-Fateh Club</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Deputy Secretary</td>
+        <td>Recreational Club UPNM</td>
+    </tr>
+</table>
+
+            <a href="contact.html" class="btn">Contact Me</a>		
+			</div>
+    </div>
+	
+	
+</body>
+</html>

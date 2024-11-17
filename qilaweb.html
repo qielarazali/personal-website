@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qila Dashboard</title>
+    <style>
+        body {
+            background-color: #e1e8f2;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #063970;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px;
+            height: 60px;
+            margin: 0;
+        }
+		
+		.adjust {
+		display:flex;
+		gap:10px;
+		align-items:center;
+		} 
+		
+			.adjust2 {
+		display:flex;
+		gap:10px;
+		align-items:center;
+		justify-content:center;
+		} 
+		
+		.kelab {
+		display:flex;
+		gap:20px;
+		}
+		
+        header span {
+            margin-right: 10px;
+        }
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom:90px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+		.center-links {
+    display: flex;
+    justify-content: left;
+    align-items: left; 
+    margin: 30px 0;
+}
+
+.center-links img {
+    margin-right: 30px;
+	margin-bottom:20px;
+}
+
+.center-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.center-links a:hover {
+    color: red; 
+}
+
+        .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .adjust, .kelab {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-slide {
+        width: 200px;
+        height: 200px;
+    }
+}
+	
+        .image-slide {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+			margin-bottom:40px;
+        }
+        .image-slide.selected {
+            transform: scale(1.2);
+        }
+
+        .button-left, .button-right {
+            position: absolute;
+            top: 190%;
+            transform: translateY(-50%);
+            background-color:#c5d9e0;
+            border: 20%;
+            font-size: 22px;
+            cursor: pointer;
+            color: #042847;
+        }
+        .button-left {
+            left: 70px;
+        }
+        .button-right {
+            right: 70px;
+        }
+		
+		footer {
+    background: #063970;
+    color: white;
+    text-align: center;
+    padding: 20px 40px; 
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+footer h2 {
+    font-size: 1.7rem;
+    margin-bottom: 5px; 
+    letter-spacing: 1px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 15px; 
+    opacity: 0.8;
+}
+
+.adjust2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+footer .contact-btn {
+    display: inline-block;
+    background-color: #46788c;
+    color: white;
+    padding: 3px 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0px;
+    transition: background-color 0.3s ease;
+}
+
+footer .contact-btn:hover {
+    background-color: #05507c;
+}
+
+
+        .footer-bottom {
+            background-color: #02152e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom a {
+            color: #d4d4d4;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+        <header>
+	    <div class="adjust">
+		<a href=https://www.facebook.com/share/1GEjzDVDTx/?mibextid=kFxxJD><img src=image/FB.png alt=fb width="35" height="35"></a>
+        <a href=https://www.instagram.com/qiela.rzl/profilecard/?igsh=YWV2bmVmMGZtNmNk><img src=image/IG.png alt=ig width="35" height="35"></a>
+	    <a href=https://x.com/lollipopcandyk?s=11><img src=image/TWITT.png alt=tiktok width="35" height="35"></a>
+		</div>
+		
+		
+		<div class ="kelab">
+		<img src=image/SAF.jpg alt=keras width="50" height="50">
+		<img src=image/KERAS.jpg alt=keras width="50" height="50">
+		<img src=image/KEWAP.jpg alt=kewap width="50" height="50">
+		</div>
+        </header>
+
+
+		<div class="center-links">
+		<img src=image/copynew.jpg alt=qila width=150 height=100></a>
+		<a href=basic.html><b>HOME</b></a>
+		<a href=profile.html><b>PROFILE</b></a>
+		<a href=work.html><b>WORK EXPERIENCE</b></a>
+		<a href=skills.html><b>SKILLS</b></a>
+		<a href=education.html><b>EDUCATION</b></a>
+		<a href=project.html><b>PROJECT</b></a>
+		<a href=contact.html><b>CONTACT</b></a>
+		
+		
+		<p><form id="form" role="search" style="margin-left: 20px;">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button>Search</button></form></p>
+        </div>
+
+<audio autoplay loop>
+  <source src="audio/WEB.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+	<div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <video autoplay muted loop style="width:100%">
+    <source src="image/CANVA.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="image/CANVA.png" style="width:100%">
+    </div>
+
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="image/CANVA1.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  <center>
+  <p><b>GALLERY</b></p>
+  </center>
+
+    <div class="content">
+    <img src="image/qila.jpg" alt="Qila's photo" class="image-slide" onclick="goToLink(this)">
+    <img src="image/pantai.jpg" alt="Pantai's photo" class="image-slide" onclick="goToLink(this)">
+    <img src="image/pantun.jpg" alt="Pantun's photo" class="image-slide" onclick="goToLink(this)">
+    </div>
+
+
+    <button class="button-left" onclick="previousImage()"><</button>
+    <button class="button-right" onclick="nextImage()">></button>
+
+
+
+    <footer>
+    <h2>Let's Connect!</h2>
+    <p>Have any questions or just want to say hi? I'm here to help.</p>
+        
+    <div class="adjust2">
+    <a href=https://www.facebook.com/share/1GEjzDVDTx/?mibextid=kFxxJD><img src=image/FB.png alt=fb width="35" height="35"></a>
+    <a href=https://www.instagram.com/qiela.rzl/profilecard/?igsh=YWV2bmVmMGZtNmNk><img src=image/IG.png alt=ig width="35" height="35"></a>
+	<a href=https://x.com/lollipopcandyk?s=11><img src=image/TWITT.png alt=tiktok width="35" height="35"></a>
+    </div>
+	    <p><a href="contact.html" class="contact-btn">Contact Me</a></p>
+    </footer>
+
+
+    <div class="footer-bottom">
+    <p>PENAFIAN | DASAR PRIVASI | DASAR KESELAMATAN</p>
+    <p>Paparan Terbaik menggunakan Mozilla Firefox, Safari atau Google Chrome versi terkini dengan resolusi melebihi 1024X768</p>
+    Hak Cipta Terpelihara &copy; Qila
+    </div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.image-slide');
+
+        function updateSelection() {
+            images.forEach((img, index) => {
+                img.classList.remove('selected');
+                if (index === currentIndex) {
+                    img.classList.add('selected');
+                }
+            });
+        }
+
+        function previousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateSelection();
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSelection();
+        }
+		</script>
+
+
+	
+</body>
+</html>

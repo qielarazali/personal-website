@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+       body {
+             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9bb5c4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+			margin-bottom:30px;
+        }
+
+
+        .contact-header {
+            width: 100%; 
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            background-color:#02152e;
+            color: #fff; 
+			margin-bottom:30px;
+			margin-top:10px;
+        }
+
+        .contact-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family:Times new roman, sans-serif;
+	color:white;
+}
+
+
+.contact-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1a3659;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1a3659;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"] {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 90px; 
+	width: 670px;;
+}
+
+button {
+    background-color: #1a3659;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #063970;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+	margin-bottom:0;
+}
+
+.contact-info a {
+    color: #1a3659;
+    text-decoration: none;
+}
+
+
+    </style>
+</head>
+<body>
+  
+  <div class="contact-header">
+             <h1>CONTACT ME</h1>
+        </div>
+     
+		<div class="contact-container">
+        <form action="mailto:syaqilascipp@gmail.com" method="POST" enctype="text/plain" onsubmit="alert('Your message has been sent');">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Your email address">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+        <div class="contact-info">
+            <p>If you need assistance, you can also reach me at:</p>
+            <p>Email: <a href="mailto:syaqilascipp@gmail.com">qilarazali@gmail.com</a></p>
+        </div>
+    </div>
+	
+	
+</body>
+</html>
